@@ -1,0 +1,4 @@
+To modify the xml to contain multiple people have kept the root xml tag as people,
+and have added the person tag as a child of people tag to contain the information of each person individually.
+After that have used the name tag to specify the name of the person
+and the hobbies tag to contain their hobbies.
