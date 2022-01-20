@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessCards>
+    <card>
+        <name>Joe Martin</name>
+        <contact type="home">+1 (415) 555-1234</contact>
+        <contact type="work">+1 (800) 555-9867</contact>
+        <contact type="mobile">+1 (510) 555-1212</contact>
+        <email>joe@joe.com</email>
+    </card>
+</BusinessCards>
