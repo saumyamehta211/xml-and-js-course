@@ -1,0 +1,12 @@
+<!ELEMENT products (product+)>
+<!ELEMENT product (productName, manufacturer, description?, prices, productItems)>
+<!ATTLIST product sku ID #REQUIRED >
+<!ATTLIST product createdAt CDATA #REQUIRED >
+<!ATTLIST product shippable (true|false) #REQUIRED >
+<!ELEMENT productName (#PCDATA)>
+<!ELEMENT manufacturer (#PCDATA)>
+<!ATTLIST manufacturer id CDATA #REQUIRED>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT prices (price+)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT productItems (#PCDATA)>
