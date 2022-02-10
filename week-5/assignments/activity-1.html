@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Test Input</title>
+    <script language="JavaScript">
+      function testResults(event) {
+        event.preventDefault();
+
+        const form = event.target;
+
+        const textbox = form.inputbox;
+        const textboxValue = textbox.value;
+
+        const radioGroup = form.radiogroup;
+        const radioGroupValue = radioGroup.value;
+
+        const checkboxGroup = form.checkboxgroup;
+
+        console.log(`Textbox's value: ${textboxValue}`);
+        console.log(`Radiobutton's value: ${radioGroupValue}`);
+        checkboxGroup.forEach(element => {
+          if(element.checked == true){
+            var checkedValue = element.value;
+            console.log(`Checkbox's checked value/s: ${checkedValue}`);
+          }
+        });
+
+        textbox.value = "";
+      }
+    </script>
+  </head>
+  <body>
+    <form onSubmit="return testResults(event)" action="" method="get">
+      Text Input: <br />
+      <input type="text" name="inputbox" value="" required />
+      <br />
+      Radio Input: <br />
+      <input type="radio" name="radiogroup" value="Y" required />Y
+      <input type="radio" name="radiogroup" value="N" required />N
+      <br />
+      Checkbox Input: <br />
+      <input type="checkbox" name="checkboxgroup" value="1" />Choice 1
+      <input type="checkbox" name="checkboxgroup" value="2" />Choice 2
+      <input type="checkbox" name="checkboxgroup" value="3" />Choice 3
+      <br />
+      <button type="submit">Click</button>
+    </form>
+  </body>
+</html>
