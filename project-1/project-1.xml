@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products>
+    <product sku="BOS12DDF2" createdAt="2020-12-23T09:23:44" shippable="true">
+        <productName>Dog Shirt Gift Basket</productName>
+        <manufacturer id="sjb-pet">SJB Pet Boutique</manufacturer>
+        <description>Something for every day of the week</description>
+    </product>
+    <product sku="OBOKS34KBKS" createdAt="2019-12-23T17:47:10" shippable="true">
+        <productName>Car Curiosity Basket</productName>
+        <manufacturer id="sjb-pet">SJB Pet Boutique</manufacturer>
+        <description>Playtime morning, noon, and night</description>
+    </product>
+    <product sku="HVBOSPR292BS" createdAt="2021-04-03T16:15:37" shippable="false">
+        <productName>Piggy Snuggle Basket</productName>
+        <manufacturer id="acme">ACME</manufacturer>
+        <description>Playtime morning, noon, and night</description>
+    </product>
+    <product sku="BJPSO1342KSLS" createdAt="2021-09-07T15:58:13" shippable="true">
+        <productName>Dog Snuggle Basket</productName>
+        <manufacturer id="acme">ACME</manufacturer>
+        <description>Playtime morning, noon, and night</description>
+    </product>
+    <product sku="BOS12DSE1" createdAt="2020-12-24T09:23:44" shippable="false">
+        <productName>Kitty Snuggle Basket</productName>
+        <manufacturer id="acme">ACME</manufacturer>
+        <description>Playtime morning, noon, and night</description>
+    </product>
+    <product sku="BOS12JJK2" createdAt="2019-12-23T09:23:44" shippable="true">
+        <productName>Cat Shirt Gift Basket</productName>
+        <manufacturer id="sjb-pet">SJB Pet Boutique</manufacturer>
+        <description>Tshirt for every day of the week</description>
+    </product>
+    <product sku="BOS12JKJ2" createdAt="2018-12-23T09:23:44" shippable="true">
+        <productName>Shirt Perfume Basket</productName>
+        <manufacturer id="sjb-bou">SJB Boutique</manufacturer>
+        <description>Perfume for every day of the week</description>
+    </product>
+    <product sku="BOS12KKJ2" createdAt="2009-12-25T09:23:44" shippable="true">
+        <productName>Fruit Basket</productName>
+        <manufacturer id="sjb-bou">SJB Boutique</manufacturer>
+        <description>Fruits for every day of the week</description>
+    </product>
+    <product sku="BOS12JKT2" createdAt="2017-12-20T09:23:44" shippable="true">
+        <productName>CocaCola</productName>
+        <manufacturer id="acme">ACME</manufacturer>
+        <description>Soft drinks for every day of the week</description>
+    </product>
+    <product sku="BOS12KLJ2" createdAt="2008-12-21T09:23:44" shippable="false">
+        <productName>Laptop Charger Basket</productName>
+        <manufacturer id="acme">ACME</manufacturer>
+        <description>Perfume for every day of the week</description>
+    </product>
+    <product sku="KIT12DDF2" createdAt="2020-11-20T09:23:44" shippable="true">
+        <productName>Kitty Shirt Gift Basket</productName>
+        <manufacturer id="acme">ACME</manufacturer>
+        <description>A basket of joy</description>
+    </product>
+    <product sku="KIT12DDF2" createdAt="2020-11-20T09:23:44" shippable="true">
+        <productName>Kitty Gift Wrap</productName>
+        <manufacturer id="sjb-pet">SJB Pet Boutique</manufacturer>
+        <description>Something to decorate your gifts</description>
+    </product>
+    <product sku="DOG12DDF2" createdAt="2020-11-20T09:23:44" shippable="true">
+        <productName>Doggy Gift Wrap</productName>
+        <manufacturer id="sjb-pet">SJB Pet Boutique</manufacturer>
+        <description>Something to decorate your gifts</description>
+    </product>
+    <product sku="BOS12IIK2" createdAt="2016-10-20T09:23:44" shippable="true">
+        <productName>Cat Bag Gift Basket</productName>
+        <manufacturer id="sjb-bou">SJB Boutique</manufacturer>
+        <description>Bags for every day of the week</description>
+    </product>
+    <product sku="BOS12JKJ2" createdAt="2018-12-23T09:23:44" shippable="false">
+        <productName>Bottle Basket</productName>
+        <manufacturer id="acme">ACME</manufacturer>
+        <description>Bottles for every day of the week</description>
+    </product>
+    <product sku="BOS12KIJ2" createdAt="2009-12-25T09:23:44" shippable="true">
+        <productName>Lysol Basket</productName>
+        <manufacturer id="sjb-bou">SJB Boutique</manufacturer>
+        <description>Lysol for every day of the week</description>
+    </product>
+    <product sku="BOS12OPT2" createdAt="2013-12-20T09:23:44" shippable="true">
+        <productName>Spectecals</productName>
+        <manufacturer id="acme">ACME</manufacturer>
+        <description>Spectecals for every day of the week</description>
+    </product>
+    <product sku="BOS12TYJ2" createdAt="2007-12-21T09:23:44" shippable="true">
+        <productName>Laptop Basket</productName>
+        <manufacturer id="sjb-bou">SJB Boutique</manufacturer>
+        <description>Laptops for every day of the week</description>
+    </product>
+    <product sku="Y2K12J2J" createdAt="2007-12-21T09:23:44" shippable="true">
+        <productName>Mobile Charger </productName>
+        <manufacturer id="sjb-bou">SJB Boutique</manufacturer>
+        <description>Charger for your mobile</description>
+    </product>
+
+    <product sku="BOS12TIK2" createdAt="2006-04-20T09:23:44" shippable="false">
+        <productName>Dog Bag Gift Basket</productName>
+        <manufacturer id="sjb-pet">SJB Pet Boutique</manufacturer>
+        <description>Bags for every day of the week</description>
+    </product>
+    <product sku="BOS12JTJ2" createdAt="2012-12-23T09:23:44" shippable="true">
+        <productName>Cover Basket</productName>
+        <manufacturer id="acme">ACME</manufacturer>
+        <description>Covers for every day of the week</description>
+    </product>
+    <product sku="BOS12KIE2" createdAt="2007-02-25T09:23:44" shippable="true">
+        <productName>Laptop Stand Basket</productName>
+        <manufacturer id="sjb-bou">SJB Boutique</manufacturer>
+        <description>Stand for every day of the week</description>
+    </product>
+    <product sku="BOS12OET2" createdAt="2013-12-20T09:23:44" shippable="false">
+        <productName>Remote Car</productName>
+        <manufacturer id="sjb-pet">SJB Pet Boutique</manufacturer>
+        <description>Cars for every day of the week</description>
+    </product>
+    <product sku="BOS12OHE2" createdAt="2013-12-20T09:23:44" shippable="true">
+        <productName>Remote Helicopter</productName>
+        <manufacturer id="acme">ACME</manufacturer>
+        <description>Helicopters for every day of the week</description>
+    </product>
+    <product sku="BOS12JTJ2" createdAt="2012-12-23T09:23:44" shippable="true">
+        <productName>Mobile Cover</productName>
+        <manufacturer id="sjb-bou">SJB Boutique</manufacturer>
+        <description>Accessories for every day of the week</description>
+    </product>
+</products>

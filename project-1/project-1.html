@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Test Input</title>
+  </head>
+  <body>
+    <form onreset="onReset()">
+      <input
+        type="text"
+        name="sku"
+        id="input-sku-term"
+        placeholder="enter sku"
+      />
+      <input
+        type="text"
+        name="name"
+        id="input-name-term"
+        placeholder="enter product name"
+      />
+      <input
+      type="radio"
+      name="shippable"
+      id="input-shippable-term-true"
+      checked
+      value="true" required
+      />true
+      <input
+      type="radio"
+      name="shippable"
+      id="input-shippable-term-false"
+      value="false" required
+      />false
+      <input
+      type="checkbox"
+      name="manufacturer"
+      id="input-manufacturer-term-sjb-pet"
+      value="sjb-pet"
+      />SJB Pet Boutique
+      <input
+      type="checkbox"
+      name="manufacturer"
+      id="input-manufacturer-term-sjb-bou"
+      value="sjb-bou"
+      />SJB Boutique
+      <input
+      type="checkbox"
+      name="manufacturer"
+      id="input-manufacturer-term-acme"
+      value="acme"
+      />ACME
+      <input
+        type="text"
+        name="description"
+        id="input-description-term"
+        placeholder="enter product description"
+      />
+      <button type="submit">Apply filters</button>
+      <button type="reset">Reset</button>
+    </form>
+    <table id="table-main" border="5">
+      <tr>
+        <th>Sku</th>
+        <th>Product Name</th>
+        <th>Manufacturer</th>
+        <th>Description</th>
+        <th>Shippable</th>
+      </tr>
+    </table>
+    <script type="text/javascript" src="project-1.js"></script>
+  </body>
+</html>
