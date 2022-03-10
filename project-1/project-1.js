@@ -100,11 +100,11 @@ const renderTable = (xmlData) => {
         let inputControlFive = document.getElementById(manId);
         inputControlFive.checked= true;
       });
-     
       jsonData = jsonData.filter(({ sku }) => sku.toLowerCase().includes(skuTerm));
       jsonData = jsonData.filter(({ product_name }) => product_name.toLowerCase().includes(nameTerm));
-      // jsonData = jsonData.filter(({ manufacturer_id }) => manufacturer_id.toLowerCase().includes(manufacturers));
-      jsonData = jsonData.filter(({ manufacturer_id }) => manufacturers.some(i => manufacturer_id.includes(i)));
+      if(manufacturers.length>0){
+        jsonData = jsonData.filter(({ manufacturer_id }) => manufacturers.some(i => manufacturer_id.includes(i)));
+      }
       jsonData = jsonData.filter(({ description }) => description.toLowerCase().includes(desTerm));
       jsonData = jsonData.filter(({ shippable }) => shippable.toLowerCase().includes(shippableTerm));
     
