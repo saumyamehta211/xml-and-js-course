@@ -2,10 +2,10 @@ const people = require("../data/w5assignmentData");
 
 const getAll = ({ id, first_name,last_name,email,gender,ip_address }) =>
   new Promise((resolve) => {
+    
     let result = Array.from(people);
-
     if (id) {
-      result = result.filter((item) => item.id === id);
+      result = result.filter((item) => item.id.toString() === id);
     }
 
     if (first_name) {
@@ -27,13 +27,12 @@ const getAll = ({ id, first_name,last_name,email,gender,ip_address }) =>
     if (ip_address) {
         result = result.filter((item) => item.ip_address === Number(ip_address));
     }
-
     resolve({ code: 200, data: JSON.stringify(result) });
   });
 
 const getById = (id) =>
   new Promise((resolve) => {
-    const person = people.find((person) => person.id === id);
+    const person = people.find((person) => person.id.toString()  === id);
 
     if (person) {
       resolve({ code: 200, data: JSON.stringify(person) });

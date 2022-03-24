@@ -12,7 +12,6 @@ const parseParams = (searchParams) => {
 
 const server = http.createServer(async (req,res) => {
     const [basePath,searchParams] = req.url.split(`?`);
-    console.log(parseParams(searchParams));
     if(basePath === `/api/people`){
         const { code, data } = await people.getAll(parseParams(searchParams));
         res.writeHead(code);
