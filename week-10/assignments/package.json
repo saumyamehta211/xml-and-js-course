@@ -4,7 +4,8 @@
   "description": "",
   "main": "activity.js",
   "scripts": {
-    "dev-activity": "nodemon activity-server.js"
+    "dev-activity": "nodemon activity-server.js",
+    "dev-assignment": "nodemon assignment-server.js"
   },
   "author": "",
   "license": "ISC",
