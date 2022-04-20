@@ -1,0 +1,14 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "renderer.js",
+  "scripts": {
+    "build": "browserify renderer.js -o dist/bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0"
+  }
+}

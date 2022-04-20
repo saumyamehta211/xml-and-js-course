@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Test Input</title>
+  </head>
+  <body>
+    <form id="userForm">
+      <input
+        type="text"
+        name="carname"
+        id="input-carname-term"
+        placeholder="enter car's name"
+      />
+      <div id="radioDiv" style="display:inline-block"></div>
+      <select name="brand" id="brand"><option value="">Select options</option></select>
+      <select name="year" id="year"><option value="">Select options</option></select>
+      <select name="color" id="color"><option value="">Select options</option></select>
+      <form id="userForm">
+        <input
+          type="text"
+          name="vin"
+          id="input-vin-term"
+          placeholder="enter car's vin"
+        />
+      
+      <button type="submit">Apply filters</button>
+      <button type="reset">Reset</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Car</th>
+          <th>Brand</th>
+          <th>Year Manufactured</th>
+          <th>Color</th>
+          <th>Vin</th>
+          <th>Country Manufactured In</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+    <script type="text/javascript" src="./dist/bundle.js"></script>
+  </body>
+</html>
