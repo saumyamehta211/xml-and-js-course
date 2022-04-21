@@ -13,7 +13,7 @@ const getAll = ({ id, car_name, car_company_name, car_model_year,car_model_color
       result = result.filter((item) => item.car_company_name.toLowerCase().includes(car_company_name.toLowerCase()));
     }
     if (car_model_year) {
-      result = result.filter((item) => item.car_model_year === car_model_year);
+      result = result.filter((item) => item.car_model_year === parseInt(car_model_year));
     }
 
     if (car_model_color) {
@@ -31,10 +31,10 @@ const getAll = ({ id, car_name, car_company_name, car_model_year,car_model_color
     resolve({ code: 200, data: result });
   });
 
-const getColor = () => cars.map(result => result.car_model_color).filter((item, i, ar) => ar.indexOf(item) === i);
-const getManufacturer = () => cars.map(result => result.car_company_name).filter((item, i, ar) => ar.indexOf(item) === i);
-const getYear = () => cars.map(result => result.car_model_year).filter((item, i, ar) => ar.indexOf(item) === i);
-const getCountry = () => cars.map(result => result.country_manufactured_in).filter((item, i, ar) => ar.indexOf(item) === i);
+const getColor = () => cars.map(result => result.car_model_color).filter((item, i, ar) => ar.indexOf(item) === i).sort();
+const getManufacturer = () => cars.map(result => result.car_company_name).filter((item, i, ar) => ar.indexOf(item) === i).sort();
+const getYear = () => cars.map(result => result.car_model_year).filter((item, i, ar) => ar.indexOf(item) === i).sort();
+const getCountry = () => cars.map(result => result.country_manufactured_in).filter((item, i, ar) => ar.indexOf(item) === i).sort();
 
 const getById = (id) =>
   new Promise((resolve) => {

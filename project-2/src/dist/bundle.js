@@ -14,7 +14,7 @@ const getAll = ({ id, car_name, car_company_name, car_model_year,car_model_color
       result = result.filter((item) => item.car_company_name.toLowerCase().includes(car_company_name.toLowerCase()));
     }
     if (car_model_year) {
-      result = result.filter((item) => item.car_model_year === car_model_year);
+      result = result.filter((item) => item.car_model_year === parseInt(car_model_year));
     }
 
     if (car_model_color) {
@@ -32,10 +32,10 @@ const getAll = ({ id, car_name, car_company_name, car_model_year,car_model_color
     resolve({ code: 200, data: result });
   });
 
-const getColor = () => cars.map(result => result.car_model_color).filter((item, i, ar) => ar.indexOf(item) === i);
-const getManufacturer = () => cars.map(result => result.car_company_name).filter((item, i, ar) => ar.indexOf(item) === i);
-const getYear = () => cars.map(result => result.car_model_year).filter((item, i, ar) => ar.indexOf(item) === i);
-const getCountry = () => cars.map(result => result.country_manufactured_in).filter((item, i, ar) => ar.indexOf(item) === i);
+const getColor = () => cars.map(result => result.car_model_color).filter((item, i, ar) => ar.indexOf(item) === i).sort();
+const getManufacturer = () => cars.map(result => result.car_company_name).filter((item, i, ar) => ar.indexOf(item) === i).sort();
+const getYear = () => cars.map(result => result.car_model_year).filter((item, i, ar) => ar.indexOf(item) === i).sort();
+const getCountry = () => cars.map(result => result.country_manufactured_in).filter((item, i, ar) => ar.indexOf(item) === i).sort();
 
 const getById = (id) =>
   new Promise((resolve) => {
@@ -328,7 +328,7 @@ for(var i = 0; i < color.length; i++) {
 
 getAll().then(({data}) => renderTable(data));
 
-let form = document.querySelector("#userForm");
+let form = document.getElementById("userForm");
 form.onsubmit = (event) => {
   event.preventDefault();
   const name = event.target.carname.value;
@@ -337,12 +337,6 @@ form.onsubmit = (event) => {
   const company = event.target.brand.value;
   const country = event.target.country_group.value;
   const vin = event.target.vin.value;
-  console.log(name);
-  console.log(year);
-  console.log(color);
-  console.log(company);
-  console.log(country);
-  console.log(vin);
   getAll({car_name:name, car_company_name:company, car_model_year:year,car_model_color:color,car_vin:vin,country_manufactured_in:country}).then(({data}) => renderTable(data));
 };
 

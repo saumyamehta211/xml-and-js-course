@@ -64,7 +64,7 @@ for(var i = 0; i < color.length; i++) {
 
 getAll().then(({data}) => renderTable(data));
 
-let form = document.querySelector("#userForm");
+let form = document.getElementById("userForm");
 form.onsubmit = (event) => {
   event.preventDefault();
   const name = event.target.carname.value;
@@ -73,12 +73,6 @@ form.onsubmit = (event) => {
   const company = event.target.brand.value;
   const country = event.target.country_group.value;
   const vin = event.target.vin.value;
-  console.log(name);
-  console.log(year);
-  console.log(color);
-  console.log(company);
-  console.log(country);
-  console.log(vin);
   getAll({car_name:name, car_company_name:company, car_model_year:year,car_model_color:color,car_vin:vin,country_manufactured_in:country}).then(({data}) => renderTable(data));
 };
 
